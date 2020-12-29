@@ -1,8 +1,9 @@
 #  Cat: a desktop pet for your Mac
 
-A desktop pet for your Mac, that follows your mouse (or trackpad) pointer around the screen.
+A desktop pet for your Mac, that follows your mouse or trackpad pointer around the screen.
 
-Inspired by the venerable Neko program and its many variants, Cat offers its own modern take, supporting crisp retina graphics on modern Mac systems.
+Inspired by the venerable Neko program and its many variants, Cat offers its own modern
+take, supporting crisp retina graphics on modern Mac systems.
 
 ## Building
 
