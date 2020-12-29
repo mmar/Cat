@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0521F2F7259BC90C00CCE0AF /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0521F2F6259BC90C00CCE0AF /* LICENSE.txt */; };
 		055006471E7031C800B9788F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 055006491E7031C800B9788F /* InfoPlist.strings */; };
 		0550064C1E70672600B9788F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550064B1E70672600B9788F /* SpriteKit.framework */; };
 		0550064E1E70673500B9788F /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550064D1E70673500B9788F /* GameplayKit.framework */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		051BB89F259BC22100F4F315 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		0521F2F6259BC90C00CCE0AF /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		055006481E7031C800B9788F /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		0550064B1E70672600B9788F /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		0550064D1E70673500B9788F /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
@@ -81,6 +83,7 @@
 		0583BC0B1E5731F90003AE2A = {
 			isa = PBXGroup;
 			children = (
+				0521F2F6259BC90C00CCE0AF /* LICENSE.txt */,
 				051BB89F259BC22100F4F315 /* README.md */,
 				0581344A259BBA0E0059E50C /* Developer.xcconfig.template */,
 				05813449259BBA0E0059E50C /* Default.xcconfig */,
@@ -196,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0521F2F7259BC90C00CCE0AF /* LICENSE.txt in Resources */,
 				0581344C259BBA0E0059E50C /* Developer.xcconfig.template in Resources */,
 				0581344B259BBA0E0059E50C /* Default.xcconfig in Resources */,
 				0583BC1C1E5731F90003AE2A /* Assets.xcassets in Resources */,
