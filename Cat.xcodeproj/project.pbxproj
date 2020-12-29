@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		055006471E7031C800B9788F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 055006491E7031C800B9788F /* InfoPlist.strings */; };
+		0550064C1E70672600B9788F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550064B1E70672600B9788F /* SpriteKit.framework */; };
+		0550064E1E70673500B9788F /* GameplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0550064D1E70673500B9788F /* GameplayKit.framework */; };
+		0581344B259BBA0E0059E50C /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 05813449259BBA0E0059E50C /* Default.xcconfig */; };
+		0581344C259BBA0E0059E50C /* Developer.xcconfig.template in Resources */ = {isa = PBXBuildFile; fileRef = 0581344A259BBA0E0059E50C /* Developer.xcconfig.template */; };
+		0583BC181E5731F90003AE2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0583BC171E5731F90003AE2A /* AppDelegate.swift */; };
+		0583BC1C1E5731F90003AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0583BC1B1E5731F90003AE2A /* Assets.xcassets */; };
+		0583BC1F1E5731F90003AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0583BC1D1E5731F90003AE2A /* Main.storyboard */; };
+		0583BC291E5749D90003AE2A /* CatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0583BC281E5749D90003AE2A /* CatState.swift */; };
+		059234401E66238000C8A1DB /* CatPlayfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592343F1E66238000C8A1DB /* CatPlayfield.swift */; };
+		059234421E66263100C8A1DB /* CatIsMoving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234411E66263100C8A1DB /* CatIsMoving.swift */; };
+		059234441E66267700C8A1DB /* CatIsAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234431E66267700C8A1DB /* CatIsAwake.swift */; };
+		059234461E6626BF00C8A1DB /* CatIsStopped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234451E6626BF00C8A1DB /* CatIsStopped.swift */; };
+		059234481E6626EE00C8A1DB /* CatIsLicking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234471E6626EE00C8A1DB /* CatIsLicking.swift */; };
+		0592344A1E66271900C8A1DB /* CatIsScratching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234491E66271900C8A1DB /* CatIsScratching.swift */; };
+		0592344C1E66274400C8A1DB /* CatIsYawning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592344B1E66274400C8A1DB /* CatIsYawning.swift */; };
+		0592344E1E66276C00C8A1DB /* CatIsSleeping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0592344D1E66276C00C8A1DB /* CatIsSleeping.swift */; };
+		059234511E66297100C8A1DB /* CatDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234501E66297100C8A1DB /* CatDirection.swift */; };
+		059234531E66357E00C8A1DB /* CatIsClawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059234521E66357E00C8A1DB /* CatIsClawing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		051BB89F259BC22100F4F315 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		055006481E7031C800B9788F /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		0550064B1E70672600B9788F /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		0550064D1E70673500B9788F /* GameplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameplayKit.framework; path = System/Library/Frameworks/GameplayKit.framework; sourceTree = SDKROOT; };
+		0550065D1E70ACE200B9788F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05813449259BBA0E0059E50C /* Default.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Default.xcconfig; sourceTree = "<group>"; };
+		0581344A259BBA0E0059E50C /* Developer.xcconfig.template */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = Developer.xcconfig.template; sourceTree = "<group>"; };
+		0583BC141E5731F90003AE2A /* Cat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0583BC171E5731F90003AE2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0583BC1B1E5731F90003AE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0583BC1E1E5731F90003AE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0583BC201E5731F90003AE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0583BC281E5749D90003AE2A /* CatState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatState.swift; sourceTree = "<group>"; };
+		0592343F1E66238000C8A1DB /* CatPlayfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPlayfield.swift; sourceTree = "<group>"; };
+		059234411E66263100C8A1DB /* CatIsMoving.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsMoving.swift; sourceTree = "<group>"; };
+		059234431E66267700C8A1DB /* CatIsAwake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsAwake.swift; sourceTree = "<group>"; };
+		059234451E6626BF00C8A1DB /* CatIsStopped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsStopped.swift; sourceTree = "<group>"; };
+		059234471E6626EE00C8A1DB /* CatIsLicking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsLicking.swift; sourceTree = "<group>"; };
+		059234491E66271900C8A1DB /* CatIsScratching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsScratching.swift; sourceTree = "<group>"; };
+		0592344B1E66274400C8A1DB /* CatIsYawning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsYawning.swift; sourceTree = "<group>"; };
+		0592344D1E66276C00C8A1DB /* CatIsSleeping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsSleeping.swift; sourceTree = "<group>"; };
+		059234501E66297100C8A1DB /* CatDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatDirection.swift; sourceTree = "<group>"; };
+		059234521E66357E00C8A1DB /* CatIsClawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatIsClawing.swift; sourceTree = "<group>"; };
+		05A806981E702B0C002D12FB /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Main.strings"; sourceTree = "<group>"; };
+		05AF44EB1E6EEF8B006F01AE /* Cat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cat.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0583BC111E5731F90003AE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0550064E1E70673500B9788F /* GameplayKit.framework in Frameworks */,
+				0550064C1E70672600B9788F /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0550064A1E70672600B9788F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0550064D1E70673500B9788F /* GameplayKit.framework */,
+				0550064B1E70672600B9788F /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0583BC0B1E5731F90003AE2A = {
+			isa = PBXGroup;
+			children = (
+				051BB89F259BC22100F4F315 /* README.md */,
+				0581344A259BBA0E0059E50C /* Developer.xcconfig.template */,
+				05813449259BBA0E0059E50C /* Default.xcconfig */,
+				0583BC161E5731F90003AE2A /* Cat */,
+				0583BC151E5731F90003AE2A /* Products */,
+				0550064A1E70672600B9788F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0583BC151E5731F90003AE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0583BC141E5731F90003AE2A /* Cat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0583BC161E5731F90003AE2A /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				05AF44EB1E6EEF8B006F01AE /* Cat.entitlements */,
+				0583BC171E5731F90003AE2A /* AppDelegate.swift */,
+				0583BC281E5749D90003AE2A /* CatState.swift */,
+				0592344F1E6627A600C8A1DB /* Cat States */,
+				0592343F1E66238000C8A1DB /* CatPlayfield.swift */,
+				059234501E66297100C8A1DB /* CatDirection.swift */,
+				0583BC1B1E5731F90003AE2A /* Assets.xcassets */,
+				0583BC1D1E5731F90003AE2A /* Main.storyboard */,
+				0583BC201E5731F90003AE2A /* Info.plist */,
+				055006491E7031C800B9788F /* InfoPlist.strings */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
+		0592344F1E6627A600C8A1DB /* Cat States */ = {
+			isa = PBXGroup;
+			children = (
+				0592344D1E66276C00C8A1DB /* CatIsSleeping.swift */,
+				0592344B1E66274400C8A1DB /* CatIsYawning.swift */,
+				059234491E66271900C8A1DB /* CatIsScratching.swift */,
+				059234471E6626EE00C8A1DB /* CatIsLicking.swift */,
+				059234451E6626BF00C8A1DB /* CatIsStopped.swift */,
+				059234431E66267700C8A1DB /* CatIsAwake.swift */,
+				059234411E66263100C8A1DB /* CatIsMoving.swift */,
+				059234521E66357E00C8A1DB /* CatIsClawing.swift */,
+			);
+			name = "Cat States";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0583BC131E5731F90003AE2A /* Cat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0583BC231E5731F90003AE2A /* Build configuration list for PBXNativeTarget "Cat" */;
+			buildPhases = (
+				0583BC101E5731F90003AE2A /* Sources */,
+				0583BC111E5731F90003AE2A /* Frameworks */,
+				0583BC121E5731F90003AE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cat;
+			productName = Cat;
+			productReference = 0583BC141E5731F90003AE2A /* Cat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0583BC0C1E5731F90003AE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Matusalem Marques";
+				TargetAttributes = {
+					0583BC131E5731F90003AE2A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CQK6S5J9RG;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0583BC0F1E5731F90003AE2A /* Build configuration list for PBXProject "Cat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-PT",
+			);
+			mainGroup = 0583BC0B1E5731F90003AE2A;
+			productRefGroup = 0583BC151E5731F90003AE2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0583BC131E5731F90003AE2A /* Cat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0583BC121E5731F90003AE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0581344C259BBA0E0059E50C /* Developer.xcconfig.template in Resources */,
+				0581344B259BBA0E0059E50C /* Default.xcconfig in Resources */,
+				0583BC1C1E5731F90003AE2A /* Assets.xcassets in Resources */,
+				055006471E7031C800B9788F /* InfoPlist.strings in Resources */,
+				0583BC1F1E5731F90003AE2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0583BC101E5731F90003AE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059234441E66267700C8A1DB /* CatIsAwake.swift in Sources */,
+				059234511E66297100C8A1DB /* CatDirection.swift in Sources */,
+				0592344E1E66276C00C8A1DB /* CatIsSleeping.swift in Sources */,
+				059234421E66263100C8A1DB /* CatIsMoving.swift in Sources */,
+				0592344A1E66271900C8A1DB /* CatIsScratching.swift in Sources */,
+				059234461E6626BF00C8A1DB /* CatIsStopped.swift in Sources */,
+				0583BC291E5749D90003AE2A /* CatState.swift in Sources */,
+				0583BC181E5731F90003AE2A /* AppDelegate.swift in Sources */,
+				059234401E66238000C8A1DB /* CatPlayfield.swift in Sources */,
+				059234481E6626EE00C8A1DB /* CatIsLicking.swift in Sources */,
+				059234531E66357E00C8A1DB /* CatIsClawing.swift in Sources */,
+				0592344C1E66274400C8A1DB /* CatIsYawning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		055006491E7031C800B9788F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055006481E7031C800B9788F /* pt-PT */,
+				0550065D1E70ACE200B9788F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0583BC1D1E5731F90003AE2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0583BC1E1E5731F90003AE2A /* Base */,
+				05A806981E702B0C002D12FB /* pt-PT */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0583BC211E5731F90003AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05813449259BBA0E0059E50C /* Default.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0583BC221E5731F90003AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05813449259BBA0E0059E50C /* Default.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		0583BC241E5731F90003AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cat/Cat.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Cat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0583BC251E5731F90003AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Cat/Cat.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Cat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0583BC0F1E5731F90003AE2A /* Build configuration list for PBXProject "Cat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0583BC211E5731F90003AE2A /* Debug */,
+				0583BC221E5731F90003AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0583BC231E5731F90003AE2A /* Build configuration list for PBXNativeTarget "Cat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0583BC241E5731F90003AE2A /* Debug */,
+				0583BC251E5731F90003AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0583BC0C1E5731F90003AE2A /* Project object */;
+}

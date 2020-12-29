@@ -1,0 +1,5 @@
+// Your Apple developer account's Team ID
+DEVELOPMENT_TEAM = <TEAM_ID>
+
+// A reverse-DNS style unique bundle identifier, e.g. `com.example.DesktopPet`
+PRODUCT_BUNDLE_IDENTIFIER = <BUNDLE_IDENTIFIER>
