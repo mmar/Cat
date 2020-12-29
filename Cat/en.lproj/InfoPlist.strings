@@ -3,10 +3,7 @@
   Cat
 
   Created by Matusalem Marques on 2017/03/08.
-  Copyright © 2017 Matusalem Marques. All rights reserved.
 */
-
-"NSHumanReadableCopyright" = "Copyright © 2017 Matusalem Marques. All rights reserved.";
 
 "CFBundleDisplayName" = "Cat";
 

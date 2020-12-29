@@ -3,7 +3,6 @@
 //  Cat
 //
 //  Created by Matusalem Marques on 2017/02/28.
-//  Copyright © 2017 Matusalem Marques. All rights reserved.
 //
 
 import SpriteKit

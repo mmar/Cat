@@ -29,7 +29,7 @@
 	<key>LSUIElement</key>
 	<false/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 Matusalem Marques. All rights reserved.</string>
+	<string>Copyright © 2017-2020 Matusalem Marques</string>
 	<key>NSMainStoryboardFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
